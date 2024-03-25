@@ -1,0 +1,215 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Satisfy&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  /* text-transform: capitalize; */
+  border: none;
+  outline: none;
+  line-height: 1.5;
+  font-family: "Nunito", sans-serif;
+}
+
+/* header section */
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/first_part.jpg) no-repeat center/cover;
+  text-align: center;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+nav ul li a {
+  color: #fff;
+  margin: 2rem;
+  font-size: clamp(0.8rem, 1vw + 0.5rem, 1.4rem);
+  transition: 0.5s;
+}
+nav ul li a:hover {
+  color: #f9690e;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  padding: 50vh;
+}
+
+.home-content {
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.home-content h3 {
+  font-size: clamp(1.5rem, 1vw + 3rem, 4rem);
+  color: #f9690e;
+  font-family: "Satisfy", cursive;
+}
+.home-content h1 {
+  font-size: clamp(1.8rem, 1vw + 4rem, 5.5rem);
+  margin-bottom: 3rem;
+  color: #fff;
+}
+
+/* .home-content h3 {
+ * *  font-size: clamp(0.7rem, 1vw + 2rem, 3.5rem);
+ * *} */
+/* tours section */
+.tours {
+  background: #fff;
+  padding: 5rem;
+}
+.tours .heading {
+  text-align: center;
+  color: var(--black);
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+.tours .heading span {
+  color: #f9690e;
+}
+.tours p {
+  font-size: clamp(1.2rem, 1vw + 1.3rem, 1.5rem);
+  width: 80%;
+  margin: 0 auto;
+  text-align: justify;
+  text-align-last: center;
+  margin-bottom: 2rem;
+}
+.tours .img-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.tours .img-container .img-box {
+  margin: 4rem;
+  width: 40rem;
+  height: 25rem;
+  position: relative;
+  box-shadow: 0.5rem 1rem 5rem rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+.tours .img-container .img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.tours .img-container .img-box button.buy-button {
+  position: absolute;
+  /* Позиціонуємо кнопку відносно .img-box */
+  bottom: 1rem;
+  /* Вказуємо відстань від нижнього краю */
+  left: 50%;
+  /* Центруємо кнопку горизонтально */
+  transform: translateX(-50%);
+  /* Центруємо кнопку горизонтально точно */
+  padding: 0.5rem 3rem;
+  background-color: #d2570b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.tours .img-container .img-box button.buy-button:hover {
+  background-color: #a1440b;
+}
+
+/* services section */
+.services {
+  background: #202020;
+  padding: 5rem;
+}
+.services .heading {
+  text-align: center;
+  color: #fff;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+.services .heading span {
+  color: #f9690e;
+}
+
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box-item {
+  margin: 2rem;
+  width: 30rem;
+  text-align: center;
+  background: #fff;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.box-item:hover {
+  transform: translateY(-0.8rem);
+}
+.box-item img {
+  width: clamp(3vw + 20%, 1vw + 25%, 40%);
+}
+.box-item .top {
+  background: #f9690e;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+  border-radius: 2rem 2rem 0 0;
+}
+.box-item .top h4 {
+  color: #fff;
+  font-style: italic;
+  font-size: 2rem;
+}
+.box-item .text {
+  padding: 2rem;
+}
+
+/* footer section */
+.footer {
+  background: #fff;
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.go-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+}
+.go-top img {
+  width: 5rem;
+  height: 5rem;
+  background: #f9690e;
+  text-align: center;
+  line-height: 5rem;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=start_st.css.map */
